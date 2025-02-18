@@ -1,1 +1,5 @@
 print ("hello world")
+print (123)
+print ("Hello Python \n")
+print(123)
+print ("Hello",1234)
