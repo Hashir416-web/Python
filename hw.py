@@ -1,1 +1,0 @@
-print (str.upper ("Congrats for winning"))
