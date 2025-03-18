@@ -3,7 +3,7 @@ print("Yes")
 print("No")
 invest=str(input("Which one?: "))
 if (invest=="Yes"):
-    print("Ok, what do you want to buy")
+    print("Ok, what do you want to buy 1,2 or 3")
     print("select yoour ride")
     print("1.bike")
     print("2.car")
@@ -15,13 +15,13 @@ if (invest=="Yes"):
         print("2.Yamaha")
         print("3.suziki")
         type=int(input("Enter type of bike: "))
-        if choice==1:
+        if (type==1):
             print("You have chosen Ninja H2R")
-        elif (type==2):
+        elif (choice==2):
             print("You have chosen Yamaha")
         else:
             print("you have chosen Suziki")
-    elif (choice==2) :
+    elif (type==2) :
         print("What type of car")
         print("1.American muscle")
         print("2.German")
