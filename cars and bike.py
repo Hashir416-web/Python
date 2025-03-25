@@ -17,11 +17,11 @@ if (invest=="Yes"):
         type=int(input("Enter type of bike: "))
         if (type==1):
             print("You have chosen Ninja H2R")
-        elif (choice==2):
+        elif (type==2):
             print("You have chosen Yamaha")
         else:
             print("you have chosen Suziki")
-    elif (type==2) :
+    elif (choice==2) :
         print("What type of car")
         print("1.American muscle")
         print("2.German")
