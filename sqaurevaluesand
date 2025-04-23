@@ -1,10 +1,19 @@
-def find_square_values(start, end):
-    """
-    This function accepts a beginning and end range (inclusive) and returns a dictionary
-    where the keys are the numbers in the range and the values are their squares.
-    """
-    if start > end:
-        raise ValueError("Start value must be less than or equal to the end value.")
-    
-    square_values = {num: num ** 2 for num in range(start, end + 1)}
-    return square_values
+def analyze_range(start, end):
+    result = {
+        "even": [],
+        "odd": []
+    }
+
+    for num in range(start, end + 1):
+        square = num ** 2
+        entry = (num, square)
+        if num % 2 == 0:
+            result["even"].append(entry)
+        else:
+            result["odd"].append(entry)
+
+    return result
+
+output = analyze_range(1, 10)
+print("Even numbers and their squares:", output["even"])
+print("Odd numbers and their squares:", output["odd"])
