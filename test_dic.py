@@ -6,4 +6,3 @@ for key in test_dic:
     if test_dic[key] == K:
         res += 1
 print ("The number of keys with value 2 are: " + str(res))
- 
