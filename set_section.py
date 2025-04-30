@@ -1,0 +1,8 @@
+setx = ("yellow","green")
+sety = ("red","yellow")
+print ("Original set element:")
+print (setx)
+print (sety)
+print ("\n Intersection of 2 said value is:")
+setz = setx.intersection(sety)
+print (setz)
