@@ -21,6 +21,7 @@ playerImg = pygame.image.load('player.png')
 playerX = player_start_x
 playerY = player_start_y
 playerX_change = 0
+playerImg = pygame.transform.scale(pygame.image.load('player.png'), (64, 64))
 enemyImg = []
 enemyx = []
 enemyy = []
@@ -29,8 +30,10 @@ enemyy_change = []
 num_of_enemies = 6
 for i in range(num_of_enemies):
     enemyImg.append(pygame.image.load('enemy.png'))
-    enemyx.append(random.randit(0, screen_width - 64))
+    playerImg = pygame.transform.scale(pygame.image.load('enemy.png'), (64, 64))
+    enemyx.append(random.randint(0, screen_width - 64))
     enemyy.append(random.randint(enemy_start_x_min, enemy_start_x_max))
+    enemyx_change.append(enemy_speed_x)
     enemyy_change.append(enemy_speed_y)
 bulletImg = pygame.image.load('bullet.png')
 bulletx = 0
