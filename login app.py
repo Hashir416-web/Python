@@ -17,7 +17,7 @@ def display():
     textbox.insert(END, greet)
     textbox.insert(END, message)
 textbox = Text(bg='#BEBEBE', fg='black')
-btn = Button( text="create Account", command=display, bg="#3895D3", fg="white")
+btn = Button(    text="create Account", command=display, bg="#3895D3", fg="white")
 frame.place(x=20, y=20)
 lbl1.place(x=20, y=20)
 name_entry.place(x=150, y=20)
